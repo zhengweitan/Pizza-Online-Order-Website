@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Drinks page</title>
+        <link rel="stylesheet" href="Drinks.css" type="text/css">
+        <script>
+            function updatePrice(elementId){
+                var sizeSelect = document.getElementById("size-" + elementId);
+                var priceButton = document.getElementById("price-button-" + elementId);
+
+                var selectedSize = sizeSelect.value;
+                var price;
+
+                if(selectedSize === "500ml"){
+                    price = "RM20";
+                } else if(selectedSize === "250ml"){
+                    price = "RM15";
+                } else if(selectedSize === "750ml"){
+                    price = "RM25";
+                }
+
+                priceButton.innerHTML = "<span>Add</span><span>" + price + "</span>";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+               
+            <img src="Images/Header Footer Pic/Header.logo.png" alt="pizza logo" class="logo">
+            <div class="link-container">
+                    <a href="Home.html" class="webpage">Home page</a>
+                    <a href="About_us.html" class="webpage">About us</a>
+                    <a href="Order.html" class="webpage">Order</a>
+                    <a href="Outlet.html" class="webpage">Outlet</a>
+            </div>
+    
+            <a href="Sign_in.html" class="signin-container">
+                <div class="signin-content">
+                    <img src="Images/Header Footer Pic/Header.sign_in.png" alt="Sign in">
+                </div>
+                
+            </a>
+        </div>
+
+        <div class="nav">
+            <div class="option">
+                <p id="drinks">Drinks</p>
+                <a href="Promotion.html" class="other_option" target="_blank">Promotion</a>
+                <a href="Pizza.html" class="other_option" target="_blank">Pizza</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div>
+                <!-- Heading of the body -->
+                <h1>SELECT YOUR DRINKS</h1>
+            </div>
+
+            <!-- Chicken pizza's container -->
+            <div>
+                <!-- Chicken pizza title -->
+                <div id="drink"><h2>Drinks</h2></div>
+                <!-- Display few items-->
+                <div class="items">
+                    <div class="row">
+                        <!-- Display one pizza -->
+                        <div class="pizza-left">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Drinks/coke.png" alt="coke" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div class="info">
+                                <div class="name">
+                                    <h2>Coke</h2>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-1" onchange="updatePrice('1')">
+                                        <option value="500ml">500ml</option>
+                                        <option value="250ml">250ml</option>
+                                        <option value="750ml">750ml</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-1" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Another pizza -->
+                        <div class="pizza-right">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Drinks/cokezero.png" alt="coke zero" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div class="info">
+                                <div class="name">
+                                    <h2>Coke Zero</h2>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-2" onchange="updatePrice('2')">
+                                        <option value="500ml">500ml</option>
+                                        <option value="250ml">250ml</option>
+                                        <option value="750ml">750ml</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-2" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                         <!-- Another pizza -->
+                         <div class="pizza-left">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Drinks/lemontea.png" alt="ice lemon tea" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div class="info">
+                                <div class="name">
+                                    <h2>Ice Lemon Tea</h2>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-3" onchange="updatePrice('3')">
+                                        <option value="500ml">500ml</option>
+                                        <option value="250ml">250ml</option>
+                                        <option value="750ml">750ml</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-3" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="pizza-right">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Drinks/7up.png" alt="7 UP" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div class="info">
+                                <div class="name">
+                                    <h2>7 UP</h2>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-4" onchange="updatePrice('4')">
+                                        <option value="500ml">500ml</option>
+                                        <option value="250ml">250ml</option>
+                                        <option value="750ml">750ml</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-4" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="pizza-left">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Drinks/mineral.png" alt="Mineral" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div class="info">
+                                <div class="name">
+                                    <h2>Mineral</h2>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-5" onchange="updatePrice('5')">
+                                        <option value="500ml">500ml</option>
+                                        <option value="250ml">250ml</option>
+                                        <option value="750ml">750ml</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-5" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="pizza-right">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Drinks/pepsi.png" alt="Pepsi" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div class="info">
+                                <div class="name">
+                                    <h2>Pepsi</h2>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-6" onchange="updatePrice('6')">
+                                        <option value="500ml">500ml</option>
+                                        <option value="250ml">250ml</option>
+                                        <option value="750ml">750ml</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-6" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" id="image-button">
+            <img src="Images/Header Footer Pic/phonecall.gif" alt="Call">
+        </a>
+    
+        <hr style="border: 2px solid red">
+    
+        <footer>
+            <div class="box">
+                <p>Any enquiry?<br>Feel free to email us</p>
+                <a href="mailto:pizza4you@gmail.com" target=_blank title="email">
+                    <button class="enquiry-button">Enquiry</button></a>
+            </div>
+        
+            <div class="box">
+                <p>Follow our socials</p>
+                <a href="https://www.instagram.com/" target =_blank title="Instagram"><img src="Images/Header Footer Pic/Footer.Instagram.png" alt="instagram"  class="media-size"></a>
+                <a href="https://www.Facebook.com/" target =_blank title="Facebook"><img src="Images/Header Footer Pic/Footer.Facebook.png" alt="facebook"  class="media-size"></a>
+                <a href="https://www.twitter.com/" target =_blank title="Twitter"><img src="Images/Header Footer Pic/Footer.Twitter.png" alt="twitter" class="media-size"></a>
+                <a href="https://www.whatsapp.com/" target =_blank title="WhatsApp"><img src="Images/Header Footer Pic/Footer.WhatsApp.png" alt="whatsapp"  class="media-size"></a>
+            </div>
+    
+            <div class="box">
+                <p>We accept</p>
+                <img src="Images/Header Footer Pic/Footer.grabpay.png" alt="GrabPay" class="grab-pay">
+                <img src="Images/Header Footer Pic/Footer.touchngo.png" alt="Touch N Go eWallet" class="touchngo">
+                <img src="Images/Header Footer Pic/Footer.mastercard.png" alt="Master Card" class="mastercard">
+            </div>
+        </footer>
+    </body>
+</html>

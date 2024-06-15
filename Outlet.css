@@ -1,0 +1,109 @@
+/* Body part elements */
+body{background-color: white; color: black; margin: 0}
+
+/* Gif button elements */
+#image-button {position: fixed;bottom: 20px;right: 20px; margin-right: 5px;}
+#image-button img {width: 70px; height: 70px; }
+
+/*Normal screen view*/
+/* Header part elements */
+.container{display: flex;align-items: center; background-color: rgb(168, 27, 27);}
+.link-container {flex-grow: 1; display: flex; justify-content: center;}
+.signin-container img{width: 35px; height: auto; margin-right: 10px;}
+.logo{margin-left: 2px;width:auto; height: 65px; cursor: pointer;border-radius: 50%; padding: 2px;}
+.webpage a{color: white; font-size:25px; font-weight: 100;text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 40px;text-decoration: none; position: relative;}
+.webpage a::after {content: ''; height: 3.5px; width: 0;background: goldenrod;
+        position: absolute; left: 0; bottom: -8px; transition: 0.5s;}
+.webpage a:hover::after {width: 100%;}
+
+/* Title part elements */
+.stretch_image{height: 130px; width: 100%; object-fit: cover;}
+.title-container{position: relative;}
+.text-overlay{position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); text-align: center; color: white;}
+.text-overlay h1 {font-size: 80px; margin-bottom: 70px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+/* Location and search input box elements */
+.location-container{display:flex; align-items: center; justify-content: center;}
+.location{width: 250px; height: auto; margin-right: 2px;}
+.input-box {width: 250px;height: 20px;border: 1px solid #ccc;
+    padding: 5px;font-size: 16px;border-radius: 15px;}
+.custom-button {border-radius: 30px; background-color: #2196F3;
+    color: black; font-size: 16px; padding: 5px 10px;}
+
+/* Table elements */
+table{margin-bottom: 50px;}
+ul{list-style: square;}
+.table-container {display: flex;justify-content: center; font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.black-border {border-collapse: collapse;}
+.black-border td,.black-border th{border: 1px solid black;padding: 8px;}
+
+/* Footer part elements */
+footer{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+font-size: 20px; display: flex; justify-content: space-between;}
+.box{text-align: center; flex:1}
+.media-size{width:40px; height:40px; margin-right: 10px}
+.enquiry-button {border-radius: 30px; background-color:rgb(145, 219, 33);
+    color: white; font-size: 20px; padding: 10px 20px;}
+.grab-pay{width: 100px; height: auto}
+.touchngo{width: 50px; height: 50px}
+.mastercard{width: 70px; height: auto}
+/*End of normal screen view*/
+
+/*Mobile view*/
+@media(max-width: 540px){
+    /* Header part elements */
+.container {display: flex; align-items: center; background-color: rgb(168, 27, 27);}
+.link-container {flex-grow: 1; display: flex;justify-content: center; align-items: center;
+    flex-wrap: wrap;}
+.signin-container img {width: auto; height: 45px; padding: 2px; margin-right: 10px;}
+.logo {margin-left: 2px;width: 50px; height: 50px; cursor: pointer;border-radius: 50%; padding: 3px;}
+.webpage a {color: white;font-size: 13px;font-weight: 100;text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    ;text-decoration: none; margin: 5px}
+.webpage a::after {content: '';height: 3.5px;width: 0;background: goldenrod;
+    position: absolute;left: 0;bottom: -8px;transition: 0.5s;}
+.webpage a:hover::after {width: 100%;}
+  
+    /* Title part elements */
+.stretch_image {height: auto;width: 100%;max-width: 100%;}
+.title-container {position: relative;}
+.text-overlay {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);
+    text-align: center;color: white;}
+.text-overlay h1 {font-size: 40px;margin-bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+  
+    /* Location and search input box elements */
+.location-container {display: flex;align-items: center;justify-content: center;
+    flex-wrap: wrap;}
+.location {width: 250px;height: auto;margin-right: 2px;}
+.input-box {width: 100%;height: 30px;border: 1px solid #ccc;padding: 5px;font-size: 14px;
+    border-radius: 15px;margin-top: 10px;}
+.custom-button {border-radius: 30px;background-color: #2196F3;color: black;
+    font-size: 14px;padding: 5px 10px;margin-top: 2px; margin-bottom: 10px;}
+  
+    /* Table elements */
+table {margin-bottom: 30px;font-size: 16px;}
+ul {list-style: square; margin-left: 20px;}
+.table-container {display: flex;justify-content: center;font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.white-border {border-collapse: collapse;}
+.white-border td,.white-border th {border: 1px solid black;padding: 8px;}
+  
+    /* Footer part elements */
+footer {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.box {text-align: center;flex-basis: 33.33%; margin-bottom: 20px;}
+.media-size {width: 25px;height: 25px;margin-right: 0.5px;}
+.enquiry-button {border-radius: 30px; background-color: rgb(145, 219, 33);color: white;
+    font-size: 16px;padding: 8px 16px;margin-top: 10px;}
+.grab-pay{width: 70px; height: auto}
+.touchngo{width: 25px; height: 25px}
+.mastercard{width: 40px; height: auto}
+} 
+
+/*End of mobile view*/

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pizza page</title>
+        <link rel="stylesheet" href="Pizza.css" type="text/css">
+        <script>
+            function updatePrice(elementId){
+                var sizeSelect = document.getElementById("size-" + elementId);
+                var priceButton = document.getElementById("price-button-" + elementId);
+
+                var selectedSize = sizeSelect.value;
+                var price;
+
+                if(selectedSize === "regular"){
+                    price = "RM 20";
+                } else if(selectedSize === "small"){
+                    price = "RM 15";
+                } else if(selectedSize === "large"){
+                    price = "RM 25";
+                }
+
+                priceButton.innerHTML = "<span>Add</span><span>" + price + "</span>";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+               
+            <img src="Images/Header Footer Pic/Header.logo.png" alt="pizza logo" class="logo">
+            <div class="link-container">
+                    <a href="Home.html" class="webpage">Home page</a>
+                    <a href="About_us.html" class="webpage">About us</a>
+                    <a href="Order.html" class="webpage">Order</a>
+                    <a href="Outlet.html" class="webpage">Outlet</a>
+            </div>
+    
+            <a href="Sign_in.html" class="signin-container">
+                <div class="signin-content">
+                    <img src="Images/Header Footer Pic/Header.sign_in.png" alt="Sign in">
+                </div>
+            </a>
+
+           
+        </div>
+
+        <div class="nav">
+            <div class="option">
+                <p id="pizza">Pizza</p>
+                <a href="Promotion.html"  class="other_option" target="_blank">Promotion</a>
+                <a href="Drinks.html"  class="other_option" target="_blank">Drinks</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div>
+                <!-- Heading of the body -->
+                <h1>SELECT YOUR PIZZA</h1>
+            </div>
+
+            <!-- Chicken pizza's container -->
+            <div class="content-container">
+                <!-- Chicken pizza title -->
+                <div id="chicken"><h2>Chicken pizza</h2></div>
+                <!-- Display few items-->
+                <div class="items">
+                    <!-- Display one pizza -->
+                    <div class="row">
+                        <div class="pizza-left">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/bolognese.png" alt="Bolognese Chicken" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>Bolognese Chicken</h2>
+                                    <p>&nbsp;Experience the perfect traditional meat sauce <br>&nbsp;on 
+                                        a pizza,topped with tasty chicken and veggies.</p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-1" onchange="updatePrice('1')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-1" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Another pizza -->
+                        <div class="pizza-right">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/sumo.png" alt="Sumo Chicken" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>Sumo Chicken</h2>
+                                    <p>&nbsp;with tomato sauce, chicken meat, pineapples, 
+                                        mozzarella <br>&nbsp;cheese.</p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-2" onchange="updatePrice('2')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-2" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Another pizza -->
+                        <div class="pizza-left">
+                        <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/us favourite.png" alt="US Favourite Chicken" class="image">
+                            </div>
+                        <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>US Favourite Chicken</h2>
+                                    <p>&nbsp;everyone's favourite with our chicken pepperoni 
+                                        <br>&nbsp;and gooey double cheese filling.</p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-3" onchange="updatePrice('3')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-3" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pizza-right">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/texas_bbq.png" alt="Texas BBQ Chicken" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>Texas BBQ Chicken</h2>
+                                    <p>&nbsp;It's a tangy and smoky BBQ life all the way with 
+                                        <br>&nbsp;our BBQ Chicken, BBQ Sauce, onion, and pineapple. </p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-4" onchange="updatePrice('4')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-4" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- Beef pizza title -->
+                <div id="beef"><h2>Beef pizza</h2></div>
+                <div class="items">
+                    <div class="row">
+                        <!-- Display one pizza -->
+                        <div class="pizza-left">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/macho_meat.png" alt="Macho Meat BEEF" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>Macho Meat Lover (BEEF)</h2>
+                                    <p>&nbsp;Ultimate pizza, filled to the brim with flavourful 
+                                        beef <br>&nbsp;pepperoni, ground beef and chunky chicken</p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-5" onchange="updatePrice('5')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-5" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Another pizza -->
+                        <div class="pizza-right">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/new_yoker.png" alt="New Yorker BEEF" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>New Yorker (BEEF)</h2>
+                                    <p>&nbsp;Stuffed with delectable beef pepperoni, mushroom, 
+                                        <br>&nbsp;chicken rolls and ground beef.</p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-6" onchange="updatePrice('6')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-6" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div id="cheese"><h2>Cheese pizza</h2></div>
+                <div class="items">
+                    <div class="row">
+                         <!-- Display one pizza -->
+                        <div class="pizza-left">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/plain_cheese.png" alt="Plain Cheese" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>Plain Cheese</h2>
+                                    <p>&nbsp;Topped with our special secret sauce and 
+                                        gooey double <br>&nbsp;cheese!</p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-7" onchange="updatePrice('7')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-7" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pizza-left">
+                            <!-- Image of the pizza -->
+                            <div>
+                                <img src="Images/Pizza/plain_cheese.png" alt="Italian plain Cheese" class="image">
+                            </div>
+                            <!-- Details of the pizza -->
+                            <div>
+                                <div class="name">
+                                    <h2>Italian Plain Cheese</h2>
+                                    <p>&nbsp;Topped with our special secret sauce and 
+                                        gooey double <br>&nbsp;cheese!</p>
+                                </div>
+                                <div class="size">
+                                    <p>select your size</p>
+                                    <select id="size-8" onchange="updatePrice('8')">
+                                        <option value="regular">Regular</option>
+                                        <option value="small">Small</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <br>
+                                    <button id="price-button-8" class="price-button"><span>Add</span><span>RM20</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" id="image-button">
+            <img src="Images/Header Footer Pic/phonecall.gif" alt="Call">
+        </a>
+    
+        <hr style="border: 2px solid red">
+    
+        <footer>
+            <div class="box">
+                <p>Any enquiry?<br>Feel free to email us</p>
+                <a href="mailto:pizza4you@gmail.com" target=_blank title="email">
+                    <button class="enquiry-button">Enquiry</button></a>
+            </div>
+        
+            <div class="box">
+                <p>Follow our socials</p>
+                <a href="https://www.instagram.com/" target =_blank title="Instagram"><img src="Images/Header Footer Pic/Footer.Instagram.png" alt="instagram"  class="media-size"></a>
+                <a href="https://www.Facebook.com/" target =_blank title="Facebook"><img src="Images/Header Footer Pic/Footer.Facebook.png" alt="facebook"  class="media-size"></a>
+                <a href="https://www.twitter.com/" target =_blank title="Twitter"><img src="Images/Header Footer Pic/Footer.Twitter.png" alt="twitter" class="media-size"></a>
+                <a href="https://www.whatsapp.com/" target =_blank title="WhatsApp"><img src="Images/Header Footer Pic/Footer.WhatsApp.png" alt="whatsapp"  class="media-size"></a>
+            </div>
+    
+            <div class="box">
+                <p>We accept</p>
+                <img src="Images/Header Footer Pic/Footer.grabpay.png" alt="GrabPay" class="grab-pay">
+                <img src="Images/Header Footer Pic/Footer.touchngo.png" alt="Touch N Go eWallet" class="touchngo">
+                <img src="Images/Header Footer Pic/Footer.mastercard.png" alt="Master Card" class="mastercard">
+            </div>
+        </footer>
+    </body>
+</html>

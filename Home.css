@@ -1,0 +1,333 @@
+/*Header*/
+.container{
+    display: flex;
+    align-items: center; 
+    background-color: rgb(168, 27, 27);
+}
+.link-container {
+    flex-grow: 1; 
+    display: flex; 
+    justify-content: center;
+}
+.signin-container img{
+    width: 35px; 
+    height: auto; 
+    margin-right: 10px;
+}
+.logo{
+    margin-left: 2px;
+    width:auto; 
+    height: 65px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 2px;
+}
+.webpage a{
+    color: white; 
+    font-size:25px; 
+    font-weight: 100;
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 40px;
+    text-decoration: none; 
+    position: relative;
+}
+.webpage a::after {
+    content: ''; 
+    height: 3.5px; 
+    width: 0;
+    background: goldenrod;
+    position: absolute; 
+    left: 0; 
+    bottom: -8px; 
+    transition: 0.5s;
+}
+.webpage a:hover::after {
+    width: 100%;
+}
+
+
+body{
+    background-color: white; 
+    color: black;
+    margin:0;
+}
+
+
+/*Banner*/ 
+.banner{
+    position: relative; 
+    margin: 0px
+}
+.stretch_image{
+    height: 150px; 
+    width: 100%; 
+    object-fit: cover;  
+}
+.text-overlay{
+    position: absolute; 
+    top: 50%; 
+    left: 65%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+}
+.text-overlay h1 {
+    font-size: 70px; 
+    margin-bottom: 70px; 
+    font-family: 'Impact', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Motto*/
+.Motto{
+    font-size: 40px; 
+    margin-bottom: 0px; 
+    text-align: center;
+    font-family:'Brush Script MT', 'Bradley Hand','Monaco';
+    margin: 0px
+} 
+
+/*Images*/
+.describe{
+    color:black; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+    gap: 30px;
+}
+.describe .img{
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;  
+    margin-bottom: 10px; 
+}
+.describe .caption { 
+    text-align: center; 
+    padding: 5px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.describe .caption:after{
+    color:white;
+    content: attr(data-hover-text); /* Display the value of the data-hover-text attribute */
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    background: linear-gradient(135deg, #ff8a00, #e52e71);/* Set the background color for the box */
+    padding: 10px 10px; 
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Added transition property */
+    width: 200px; /* Set the width of the box */
+    height: 50px;
+}
+
+.describe .caption:hover:after {
+    opacity: 1;
+}
+
+hr{
+    border-top: 1px dashed red
+}
+
+/*Announcement*/
+.Announcement{
+    text-align: center;
+}
+
+.Announcement h1{
+    font-size: 80px; 
+    margin-bottom: 20px; 
+    text-align: center;
+    font-family:'Impact', 'Bradley Hand','Monaco' ;
+}
+
+.image-scroll{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    overflow:auto;
+    position:relative;
+    scroll-behavior:smooth;
+}
+
+.scrolling{
+    min-width: 250px;
+    height: 250px;
+    margin:1px 10px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.A-images{
+    width: 250px; height: 250px; object-fit: cover;  margin-bottom: 10px; 
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 20px; 
+    display: flex; 
+    justify-content: space-between;
+}
+.box{
+    text-align: center; 
+    flex:1
+}
+.media-size{
+    width:40px; 
+    height:40px; 
+    margin-right: 10px
+}
+.enquiry-button {
+    border-radius: 30px; 
+    background-color:rgb(145, 219, 33);
+    color: white; 
+    font-size: 20px; 
+    cursor:pointer;
+    padding: 10px 20px;
+}
+.grab-pay{
+    width: 100px; 
+    height: auto
+}
+.touchngo{
+    width: 50px; 
+    height: 50px
+}
+.mastercard{
+    width: 70px; 
+    height: auto
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex; 
+        align-items: center; 
+        background-color: rgb(168, 27, 27);
+    }
+    .link-container {
+        flex-grow: 1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .signin-container img {
+        width: auto; 
+        height: 45px; 
+        padding: 2px;
+    }
+    .logo {
+        margin-left: 2px;
+        width: 50px; 
+        height: 50px; 
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .webpage a {
+        color: white;
+        font-size: 13px;
+        font-weight: 100;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none; 
+        margin: 5px
+    }
+    .webpage a::after {
+        content: '';
+        height: 3.5px;
+        width: 0;
+        background: goldenrod;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .webpage a:hover::after {
+        width: 100%;
+    }
+
+    .text-overlay h1 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .Motto {
+        font-size: 15px;
+    }
+
+    .describe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .describe .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .describe .caption:after {
+        width: 150px;
+    }
+
+    .Announcement h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .A-images {
+        width: 80px;
+        height: 80px;
+    }
+
+    .image-scroll {
+        overflow:auto;
+    }
+
+    .scrolling {
+        min-width: 80px;
+        height: 100px;
+    }
+
+    footer {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .box {
+        text-align: center;
+        flex-basis: 33.33%; 
+        margin-bottom: 20px;
+    }
+    .media-size {
+        width: 25px;
+        height: 25px;
+        margin-right: 0.5px;
+    }
+    .enquiry-button {
+        border-radius: 30px; 
+        background-color: rgb(145, 219, 33);
+        color: white;
+        font-size: 16px;
+        padding: 8px 16px;
+        cursor:pointer;
+        margin-top: 10px;
+    }
+    .grab-pay{
+        width: 70px; 
+        height: auto
+    }
+    .touchngo{
+        width: 25px; 
+        height: 25px
+    }
+    .mastercard{
+        width: 40px; 
+        height: auto
+    }
+
+
+}

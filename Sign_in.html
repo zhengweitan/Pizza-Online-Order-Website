@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <link rel="stylesheet" type="text/css" href="Sign_in.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+        <div class="container">
+            <img src="Images/Header Footer Pic/Header.logo.png" alt="pizza logo" class="logo">
+        <nav class="link-container">
+            <b class="webpage">
+                <a href="Home.html">Home page</a>
+                <a href="About_us.html">About us</a>
+                <a href="Order.html">Order</a>
+                <a href="Outlet.html">Outlet</a>
+            </b>
+        </nav>
+        <a href="Sign_in.html" class="signin-container">
+            <img src="Images/Header Footer Pic/Header.sign_in.png" alt="Sign in">
+        </a>
+    </div>
+
+    <!--Images-->
+        <div class="image-container">
+            <div class="background-image"></div>
+            <div class="Words">
+                <h1>Sign Up</h1>
+                <div class="Account">Create an account today!!!</div>
+            </div>
+        </div>
+
+
+
+
+    <!--Forms-->
+    <div class="body">
+        <div class="Form-modifier">        
+                <h1>Sign Up below</h1>
+            <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Xiao Ming" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname">Last name:</label>
+                <input type="text" id="fname" name="lname" placeholder="Chan" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="xiaomingchan@gmail.com">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+6012-345-6789">
+            </div>
+            <br>
+            <div>
+                <label for="bdate">Birthday:</label>
+                <input type="date" id="bdate" name="bdate">
+            </div>
+            <br>
+            <!--Button-->
+            <div class="button">
+                <button onclick="submit()">Submit</button>
+
+                <script>
+                    function submit(){
+                    alert('Submission received')
+                    }
+                </script>
+            </div>
+        </div>
+        <!--Audio-->
+        <div class="audio-gif-container">
+            <audio controls autoplay loop src="Images/SignUp CSS/Sign.4.audio.mp3">
+            This browser does not support the audio <!--Will display this if cannot support-->
+            </audio>
+        <!--GIF-->
+            <div>
+                <img src="Images/SignUp CSS/Sign.1.JoinUs.gif">
+            </div>
+        </div>
+    </div>  
+
+    <hr style="border: 2px solid red">
+    
+    <!--Footer-->
+    <footer>
+        <div class="box">
+            <p>Any enquiry?<br>
+            Feel free to email us
+            </p>
+            <a href="mailto:pizza4you@gmail.com" target=_blank title="email"><button class="enquiry-button">Enquiry</button></a>
+        </div>
+    
+        <div class="box">
+            <p>Follow our socials</p>
+            <a href="https://www.instagram.com/" target =_blank title="Instagram"><img src="Images/Header Footer Pic/Footer.Instagram.png" alt="instagram"  class="media-size"></a>
+            <a href="https://www.Facebook.com/" target =_blank title="Facebook"><img src="Images/Header Footer Pic/Footer.Facebook.png" alt="facebook"  class="media-size"></a>
+            <a href="https://www.twitter.com/" target =_blank title="Twitter"><img src="Images/Header Footer Pic/Footer.Twitter.png" alt="twitter" class="media-size"></a>
+            <a href="https://www.whatsapp.com/" target =_blank title="WhatsApp"><img src="Images/Header Footer Pic/Footer.WhatsApp.png" alt="whatsapp"  class="media-size"></a>
+        </div>
+    
+        <div class="box">
+            <p>We accept</p>
+            <img src="Images/Header Footer Pic/Footer.grabpay.png" alt="GrabPay" class="grab-pay">
+            <img src="Images/Header Footer Pic/Footer.touchngo.png" alt="Touch N Go eWallet" class="touchngo">
+            <img src="Images/Header Footer Pic/Footer.mastercard.png" alt="Master Card" class="mastercard">
+        </div>
+    </footer>
+
+</body>
+</html>
